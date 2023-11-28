@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --main-color:#c39bd3;
+    --blue-color:#A9cce3;
+    --azure-color:#f0ffff;
+}
+body{
+    background-image: linear-gradient(to bottom right,var(--main-color),var(--blue-color));
+}
+
+/*-------- Navbar code --------*/
+.navbar{
+    width: 100%;
+    height: 50px;
+    display:flex ;
+    align-items: center;
+    margin: auto;
+    position:sticky;
+}
+
+/*-------- Navbar left code --------*/
+
+
+.navbar .nav-left{
+    width: 40%;
+}
+.navbar .nav-left h1{
+    font-size: 28px;
+    margin-left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    cursor: default;
+}
+
+/*-------- Navbar right code --------*/
+
+
+.navbar .nav-right{
+    width: 60%;
+}
+.navbar .nav-right ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    list-style-type: none;
+    padding-right: 50px;
+}
+.navbar .nav-right ul a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+}
+.navbar .nav-right ul a:hover{
+    font-size: 20px;
+    border-bottom: 2px solid rgb(116, 245, 219);
+}
+
+/*-------- Home Section code --------*/
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+}
+.home .container1{
+    /* background: red  */
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    height: 90vh;
+    background-color: rgba(240, 255, 255, .3) ;
+    border-radius: 40px;
+}
+
+/*-------- Home Section text-box code --------*/
+
+
+.home .container1 .text-box{
+    /* background-color: red; */
+    width: 35%;
+    height: 150px;
+    margin:18% 100px;
+}
+.text-box p{
+    font-size: 25px;
+}
+.text-box h1{
+    font-size: 30px ;
+    font-weight: 700;
+    line-height: 40px;
+}
+.text-box h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #b067cf;
+}
+.home .container1 .social-media a{
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(116, 94, 239);
+    transition: .5s ease;
+}
+.home .container1 .social-media a:hover{
+    background-color: rgb(116, 94, 239);
+    color: var(--main-color);
+}
+.home .container1 .text-box #btn{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: #b067cf;
+    color: rgb(217, 211, 251);
+    border: 2px solid #b067cf;
+    border-radius: 30px;
+    transition: .3s ease;
+}
+.home .container1 .text-box #btn:hover{
+    background-color: transparent;
+    color: #b067cf ;
+}
+
+/*-------- Home Section image-box code --------*/
+
+
+.home .container1 .img-box{
+    background-color: rgba(240, 255, 255, .3) ;
+    margin: auto;
+    border: 1px solid var(--azure-color);
+    border-radius: 50%;
+    box-shadow: -5px -2px 20px grey;
+}
+.img-box img{
+    border-radius: 50%;
+}
+
+/*-------- About Section code --------*/
+
+
+.about{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100vh;
+}
+.about .container2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1300px;
+    margin: auto;
+    height: 90vh;
+}
+
+/*-------- Home Section image-box code --------*/
+
+
+.about .container2 .img{
+    width: 33%;
+    height: 90vh;
+    /* background-color: red; */
+}
+.about .container2 .img img{
+    filter: drop-shadow(5px 5px 10px grey);
+}
+.about .container2 #line{
+    background-color: #b067cf ;
+    height: 98vh;
+    width: 6px;
+    border-radius: 6px;
+}
+
+/*-------- Home Section text-box code --------*/
+
+
+.about .container2 .text{
+    width: 50%;
+    height: 90vh;
+    text-align:justify;
+    margin-top: 20%;
+    padding-left: 30px;
+    line-height: 22px;
+    /* background-color: green; */
+}
+.about .container2 .text h1{
+    color: #b067cf;
+    padding-bottom: 8px;
+    font-size: 30px;
+}
+.about .container2 .text p{
+    padding-left: 1rem;
+    font-size: 18px;
+}
+.about .container2 .text span{
+    color: rgb(90, 64, 236);
+}
+.about .container2 .text h4{
+    color: rgb(102, 134, 239);
+    padding: 20px 0;
+    font-size: 25px;
+}
+.about .container2 .text ul li{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b067cf;
+    height: 30px;
+    width: 80px; 
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 30px;
+    color: rgb(217, 211, 250);
+    border: 2px solid #b067cf;
+    transition: .3s ease;
+}
+.about .container2 .text ul li:hover{
+    background: transparent;
+    color: #b067cf;
+}
+
+/*-------- Project Section code --------*/
+
+
+.project{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100vh;
+}
+.project .container3{
+    /* background: red; */
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+    height: 90vh;
+}
+.project .container3 .cards{
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    gap: 100px;
+    margin: auto;
+    margin-top: 100px;
+}
+.project .container3 .cards .landing{
+    background-color: #b067cf;
+    text-align: center;
+    padding: 5px;
+    width: 260px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(36, 35, 35);
+}
+.project .container3 .cards .portfolio{
+    background-color: #b067cf;
+    text-align: center;
+    padding: 5px;
+    width: 260px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(36, 35, 35);
+}
+.project .container3 .cards .calculator{
+    background-color: #b067cf;
+    text-align: center;
+    padding: 5px;
+    width: 260px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(36, 35, 35);
+}
+.landing img{
+    border-radius: 10px;
+    width: 250px;
+    height: 180px;
+
+}
+.portfolio img{
+    border-radius: 10px;
+    width: 250px;
+    height: 180px;
+
+}
+.calculator img{   
+    border-radius: 10px;
+    width: 250px;
+    height: 180px;
+
+}
+.cards h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.cards p{
+    font-size: 16px;
+    padding: 3px;
+}
+.cards button{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #b067cf;
+    background-color: #dba6f2;
+}
+
+/*-------- contact Section code --------*/
+
+
+.contact{
+    /* background: white; */
+    width: 100%;
+    height: 100vh;
+}
+.contact .container4{
+    /* background: red; */
+    max-width: 1000px;
+    margin: auto;
+    height: 90vh;
+    background-color: rgba(240, 255, 255, .3) ;
+    border-radius: 40px;
+}
+.contact .container4 h1{
+    text-align: center;
+    padding: 10px;
+    color: #b067cf;
+    font-size: 30px;
+    font-weight: 700;
+}
+.contact .container4 .box{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+}
+/*-------- Contact Section form-area code --------*/
+
+.contact .container4 .box .form-area{
+    width: 40%;
+    display:grid;
+    gap: 35px;
+    margin: 5% 20px;
+    /* background-color: yellow; */
+}
+.box .form-area input{
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid azure ;
+    background-color: transparent;
+}
+.box .form-area textarea{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid azure ;
+    background-color: transparent;
+}
+
+/*-------- Contact Section details-area code --------*/
+
+
+.contact .container4 .box .details-area{
+    width: 40%;
+    margin: 10%;
+    /* background-color: red; */
+}
+.box .details-area h2{
+    margin: 5% 10px;
+    font-size: 30px;
+    color: #b067cf;
+}
+.box .details-area p{
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+/*-------- Footer code --------*/
+
+
+footer{
+    background-color: rgba(81, 80, 80, 0.611);
+    height: 40px;
+    text-align: center;
+    color: rgb(68, 68, 68);
+    padding-top: 8px;
+}
