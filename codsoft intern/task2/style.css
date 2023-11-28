@@ -369,6 +369,19 @@ body{
     border: 2px solid azure ;
     background-color: transparent;
 }
+.box .form-area #submit{
+    background-color: #d09ce6;
+    border: 2px solid #d09ce6;
+    font-size: 18px;
+    width: 100px;
+    margin-left: 35%;
+    padding: 10px;
+    transition: .3s ease;
+}
+.box .form-area #submit:hover{
+    background-color: transparent;
+    color: #82419e;
+}
 
 /*-------- Contact Section details-area code --------*/
 
